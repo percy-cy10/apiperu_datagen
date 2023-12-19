@@ -77,7 +77,7 @@
                 <a href="https://web.facebook.com/Percy.CY10/"> FACEBOOK
                     <i class="fab fa-facebook-square fa-2x"></i>
                 </a>
-                <a href="https://twitter.com/tu-empresa" target="_blank"> Twitter
+                <a href="https://twitter.com/tu-empresa" target="_blank"> TWITTER
                     <i class="fab fa-twitter-square fa-2x"></i>
                 </a>
                 <a href="https://linkedin.com/company/tu-empresa" target="_blank"> LINKEDIN
