@@ -29,7 +29,7 @@
         .card {
             width: auto; /* Ajusta el ancho según tus preferencias */
             height: auto; /* Ajusta la altura según tus preferencias */
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         header {
             background-color: #ffffff;
