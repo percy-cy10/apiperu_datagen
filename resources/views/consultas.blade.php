@@ -10,15 +10,15 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+
+    <!-- Tarjeta 1: Consulta de Datos -->
     <div class="row">
-        <div class="col-md-6">
-            <div class="card">
+        <div class="col-md-4">
+
                 <div class="card-body">
-                    <h2 class="text-center mb-4">Consulta de Datos</h2>
+                    <p class="text-center mb-4"> <strong> CONSULTA DE DATOS</strong></p>
 
                     <form method="POST" action="{{ url('/consulta') }}">
-
                         <div class="form-group">
                             <label for="tipoConsulta">Tipo de Consulta</label>
                             <select class="form-control" id="tipoConsulta" name="tipoConsulta">
@@ -34,29 +34,33 @@
                     </form>
 
                 </div>
-            </div>
+
         </div>
 
-        <div class="col-md-6">
+        <!-- Tarjeta 2: Información -->
+        <div class="col-md-8">
+            <p class="text-center mb-4 mt-2"> <strong>INFORACCIÓN</strong></p>
             <div class="card">
 
-                <h2 class="text-center mb-4 mt-2">Información</h2>
-                <div class="card-body" id="informacion">
+                <div class="card-body">
 
 
-                    @if ($mensaje)
-                        <div class="alert alert-danger text-center">
-                            {{ $mensaje }}
-                        </div>
-                    @endif
+                    <div id="informacion">
 
-                    @yield('informacion')
+                        @if ($mensaje)
+                            <div class="alert alert-danger text-center">
+                                {{ $mensaje }}
+                            </div>
+                        @endif
+
+                        @yield('informacion')
+
+                    </div>
 
                 </div>
             </div>
         </div>
-
     </div>
-</div>
+
 
 @endsection
