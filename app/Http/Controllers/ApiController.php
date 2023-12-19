@@ -27,11 +27,13 @@ class ApiController extends Controller
         $data = json_decode($response, true);
 
 
+        if($data){
+            $vista = $tipo === 'DNI' ? 'dni' : 'ruc';
+            return view($vista, ['mensaje' => "", 'data' => $data]);
 
-
-        $vista = $tipo === 'DNI' ? 'dni' : 'ruc';
-
-        return view($vista, compact('data'));
+        }else{
+            return view('consultas', ['mensaje' => "No se encontraron datos :'( "]);
+        }
     }
 
 }

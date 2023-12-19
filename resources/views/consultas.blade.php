@@ -34,6 +34,13 @@
                 <h2 class="text-center mb-4 mt-2">Información</h2>
                 <div class="card-body" id="informacion">
 
+
+                    @if ($mensaje)
+                        <div class="alert alert-danger text-center">
+                            {{ $mensaje }}
+                        </div>
+                    @endif
+
                     @yield('informacion')
 
                 </div>
